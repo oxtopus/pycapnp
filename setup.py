@@ -124,7 +124,7 @@ else:
     extensions = [Extension("capnp.lib.capnp", ["capnp/lib/capnp.cpp"],
                             include_dirs=["."],
                             language='c++',
-                            extra_compile_args=['--std=c++11'],
+                            extra_compile_args=['--std=gnu++11'],
                             libraries=['capnpc', 'capnp-rpc', 'capnp', 'kj-async', 'kj'])]
 
 setup(
